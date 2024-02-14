@@ -1,1 +1,0 @@
-import{s as n}from"../chunks/scheduler.DY6Msf2u.js";import{S as e,i as s}from"../chunks/index.DjsPaKsZ.js";function i(){document.cookie="jwt=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;",window.location.href="/"}function a(o){return i(),[]}class u extends e{constructor(t){super(),s(this,t,a,null,n,{})}}export{u as component};
