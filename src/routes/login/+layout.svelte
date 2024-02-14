@@ -1,3 +1,3 @@
-<div class="bg-neutral-100">
+<div class="bg-teal-800">
     <slot />
 </div>

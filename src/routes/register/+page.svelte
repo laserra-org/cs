@@ -50,8 +50,12 @@
     <div
       class="w-96 p-6 m-auto bg-white text-neutral-700 rounded-md shadow-md lg:max-w-lg"
     >
-    <div><a href="/"><Icon name="home" color="fill-neutral" size="32" /></a
-        ></div>
+    <div class="flex flex-row items-center">
+      <a href="/"
+        ><Icon name="chevron-left" color="fill-cyan-800" size="32" /></a
+      >
+      <div><a href="/">Torna indietro</a></div>
+    </div>
       <h1 class="text-3xl font-semibold text-center">Registrati</h1>
       <form class="space-y-4 text-neutral-700" on:submit={handleSubmit}>
         <div>

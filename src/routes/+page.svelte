@@ -19,10 +19,9 @@
                         /></a
                     >
                 </div>
-                <div class="grow">Prenota un campo</div>
+                <div class="grow"><a href="/fakeinfo">Prenota un campo</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-4">
-                <div class="grow text-right">I nostri corsi</div>
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
                     <a href="/fakeinfo"
                         ><Icon
@@ -32,6 +31,7 @@
                         /></a
                     >
                 </div>
+                <div class="grow"><a href="/fakeinfo">I nostri corsi</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-4">
                 <div
@@ -45,7 +45,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow">La Palestra</div>
+                <div class="grow"><a href="/fakeinfo">La Palestra</a></div>
             </div>
         </div>
     </div>
@@ -62,10 +62,9 @@
                         /></a
                     >
                 </div>
-                <div class="flex grow">Pranzo di lavoro</div>
+                <div class="flex grow"><a href="/fakeinfo">Pranzo di lavoro</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-2">
-                <div class="grow text-right">Menu serale</div>
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
                     <a href="/fakeinfo"
                         ><Icon
@@ -75,6 +74,7 @@
                         /></a
                     >
                 </div>
+                <div class="grow"><a href="/fakeinfo">Menu serale</a></div>
             </div>
         </div>
     </div>
@@ -93,11 +93,10 @@
                         /></a
                     >
                 </div>
-                <div class="grow">Nutrizionista</div>
+                <div class="grow"><a href="/fakeinfo">Nutrizionista</a></div>
             </div>
 
             <div class="flex flex-row items-center w-full gap-4">
-                <div class="grow text-right">Servizi ambulatoriali</div>
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
                     <a href="/fakeinfo"
                         ><Icon
@@ -107,6 +106,7 @@
                         /></a
                     >
                 </div>
+                <div class="grow"><a href="/fakeinfo">Servizi ambulatoriali</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-4">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
@@ -118,7 +118,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow">Fisioterapia</div>
+                <div class="grow"><a href="/fakeinfo">Fisioterapia</a></div>
             </div>
         </div>
     </div>
@@ -128,7 +128,6 @@
                 PER I BAMBINI
             </div>
             <div class="flex flex-row items-center w-full gap-2">
-                <div class="grow text-right">Per le scuole</div>
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
                     <a href="/fakeinfo"
                         ><Icon
@@ -138,6 +137,7 @@
                         /></a
                     >
                 </div>
+                <div class="grow"><a href="/fakeinfo">Per le scuole</a></div>
             </div>
 
             <div class="flex flex-row items-center w-full gap-2">
@@ -150,11 +150,10 @@
                         /></a
                     >
                 </div>
-                <div class="grow">Summer e Winter camps</div>
+                <div class="grow"><a href="/fakeinfo">Summer e Winter camps</a></div>
             </div>
 
             <div class="flex flex-row items-center w-full gap-2">
-                <div class="grow text-right">Attività 8-12 anni</div>
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
                     <a href="/fakeinfo"
                         ><Icon
@@ -164,6 +163,7 @@
                         /></a
                     >
                 </div>
+                <div class="grow"><a href="/fakeinfo">Attività 8-12 anni</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-2">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
@@ -175,7 +175,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow">Attività 3-7 anni</div>
+                <div class="grow"><a href="/fakeinfo">Attività 3-7 anni</a></div>
             </div>
         </div>
     </div>
@@ -190,7 +190,7 @@
         </div>
     </div>
     <div
-        style="position: absolute; top: 56%; left: 50%; transform: translate(-50%, -50%);"
+        style="position: absolute; top: 55.3%; left: 50%; transform: translate(-50%, -50%);"
     >
         <div class="flex justify-center items-center h-full text-teal-800">
             <a href="/login">Login</a>
@@ -201,16 +201,16 @@
         style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%);"
     >
         <div class="flex justify-center items-center h-full">
-            <a href="/login"
+            <a href="/events"
                 ><Icon name="today" color="fill-teal-800" size="48" /></a
             >
         </div>
     </div>
     <div
-        style="position: absolute; top: 54%; left: 80%; transform: translate(-50%, -50%);"
+        style="position: absolute; top: 53.3%; left: 80%; transform: translate(-50%, -50%);"
     >
         <div class="flex justify-center items-center h-full text-teal-800">
-            <a href="/login">Eventi</a>
+            <a href="/events">Eventi</a>
         </div>
     </div>
     <div
@@ -224,13 +224,13 @@
         </div>
     </div>
     <div
-    class="w-12 h-12 bg-neutral-300 rounded-full"
-    style="position: absolute; top: 50%; left: 28%; transform: translate(-50%, -50%);"
->
-    <div class="flex justify-center items-center h-full">
-        <a href="https://www.facebook.com/laserraillocalecordiale/"
-            ><Icon name="facebook" color="fill-teal-800" size="32" /></a
-        >
+        class="w-12 h-12 bg-neutral-300 rounded-full"
+        style="position: absolute; top: 50%; left: 28%; transform: translate(-50%, -50%);"
+    >
+        <div class="flex justify-center items-center h-full">
+            <a href="https://www.facebook.com/laserraillocalecordiale/"
+                ><Icon name="facebook" color="fill-teal-800" size="32" /></a
+            >
+        </div>
     </div>
-</div>
 </div>

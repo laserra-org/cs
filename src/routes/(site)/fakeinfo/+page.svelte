@@ -25,6 +25,7 @@
             <img src="https://upload.wikimedia.org/wikipedia/en/3/33/Lundgren_Ivan_Drago.jpg" alt="Ivan Drago" class="w-24 h-24 rounded-full">
             <div><p class="text-xl ">Ivan Drago</p><p>Ti spiezza in due e poi ti rimette a posto. Chiamalo allo 012-3456789</p></div>
         </div>
+        NOTA: LE PAGINE DI DETTAGLIO AL MOMENTO SON TUTTE UGUALI
     </div>
 
 </div>
