@@ -1,48 +1,37 @@
 <script>
   import { goto } from "$app/navigation";
-  import { API_URL } from "$lib/config";
+  import { supabase } from "$lib/supabaseClient.js";
   import { Label, Input, Button, Icon } from "$lib/components/atoms";
 
   if (typeof window !== "undefined" && typeof document !== "undefined") {
     const jwtCookie = document.cookie
       .split("; ")
-      .find((cookie) => cookie.startsWith("jwt="));
+      .find((cookie) => cookie.startsWith("sb-access-token="));
     if (jwtCookie) {
-      goto("/");
+      goto("/app");
     }
   }
 
-  let username = "";
+  let loading = false;
+  let email = "";
   let password = "";
 
   async function handleSubmit() {
-    let req = "username=" + username + "&password=" + password;
     try {
-      // Send a POST request to your authentication backend to obtain a JWT token
-      const response = await fetch(API_URL + "/users/auth/jwt/login", {
-        method: "POST",
-        headers: {
-          accept: "application/json",
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        //body: JSON.stringify({ username, password }),
-        body: req.toString(),
+      loading = true;
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
       });
-
-      if (response.ok) {
-        const data = await response.json();
-        // Store the JWT token in a cookie
-        document.cookie = `jwt=${data.access_token}; path=/`;
-        // Redirect the user to a protected route
-        // You can use the router to navigate to the protected route
-        // import { goto } from '$app/navigation';
-        console.log("login OK!");
-        goto("/");
-      } else {
-        console.error("Login failed");
-      }
+      if (error) throw error;
+      document.cookie = `sb-access-token=${data.session.access_token}; path=/`;
+      goto("/app");
     } catch (error) {
-      console.error("Error:", error);
+      if (error instanceof Error) {
+        alert(error.message);
+      }
+    } finally {
+      loading = false;
     }
   }
 </script>
@@ -55,13 +44,13 @@
       <a href="/"
         ><Icon name="chevron-left" color="fill-teal-800" size="32" /></a
       >
-      <div><a href="/">Torna indietro</a></div>
+      <div><a href="/">Torna alla Home</a></div>
     </div>
     <h1 class="text-3xl font-semibold text-center">Entra</h1>
     <form class="space-y-4 text-neutral-700" on:submit={handleSubmit}>
       <div>
         <Label for="email">Email</Label>
-        <Input type="text" placeholder="Email Address" bind:value={username} />
+        <Input type="text" placeholder="Email Address" bind:value={email} />
       </div>
       <div>
         <Label for="password">Password</Label>

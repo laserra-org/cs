@@ -1,51 +1,42 @@
 <script>
-    import { goto } from "$app/navigation";
-    import { API_URL } from "$lib/config";
-    import { Label, Input, Button, Icon } from "$lib/components/atoms";
-  
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
-      const jwtCookie = document.cookie
-        .split("; ")
-        .find((cookie) => cookie.startsWith("jwt="));
-      if (jwtCookie) {
-        goto("/");
-      }
+  import { goto } from "$app/navigation";
+  import { supabase } from "$lib/supabaseClient.js";
+  import { Label, Input, Button, Icon } from "$lib/components/atoms";
+
+  if (typeof window !== "undefined" && typeof document !== "undefined") {
+    const jwtCookie = document.cookie
+      .split("; ")
+      .find((cookie) => cookie.startsWith("sb-access-token="));
+    if (jwtCookie) {
+      goto("/app");
     }
+  }
   
-    let username = "";
-    let password = "";
-  
-    async function handleSubmit() {
-      let req = "username=" + username + "&password=" + password;
-      try {
-        // Send a POST request to your authentication backend to obtain a JWT token
-        const response = await fetch(API_URL + "/users/auth/jwt/login", {
-          method: "POST",
-          headers: {
-            accept: "application/json",
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          //body: JSON.stringify({ username, password }),
-          body: req.toString(),
-        });
-  
-        if (response.ok) {
-          const data = await response.json();
-          // Store the JWT token in a cookie
-          document.cookie = `jwt=${data.access_token}; path=/`;
-          // Redirect the user to a protected route
-          // You can use the router to navigate to the protected route
-          // import { goto } from '$app/navigation';
-          console.log("login OK!");
-          goto("/");
-        } else {
-          console.error("Login failed");
-        }
-      } catch (error) {
-        console.error("Error:", error);
+  let loading = false;
+  let email = "";
+  let password = "";
+
+  async function handleSubmit() {
+    try {
+      loading = true;
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+      if (error) throw error;
+      ///document.cookie = `access_token=${data.session.access_token}; path=/`;
+      ///goto("/app");
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(error.message);
       }
+    } finally {
+      loading = false;
     }
+  }
   </script>
+
+
   <div class="relative flex flex-col justify-center h-screen overflow-hidden">
     <div
       class="w-96 p-6 m-auto bg-white text-neutral-700 rounded-md shadow-md lg:max-w-lg"
@@ -54,13 +45,13 @@
       <a href="/"
         ><Icon name="chevron-left" color="fill-cyan-800" size="32" /></a
       >
-      <div><a href="/">Torna indietro</a></div>
+      <div><a href="/">Torna alla Home</a></div>
     </div>
       <h1 class="text-3xl font-semibold text-center">Registrati</h1>
       <form class="space-y-4 text-neutral-700" on:submit={handleSubmit}>
         <div>
           <Label for="email">Email</Label>
-          <Input type="text" placeholder="Email Address" bind:value={username} />
+          <Input type="text" placeholder="Email Address" bind:value={email} />
         </div>
         <div>
           <Label for="password">Password</Label>
