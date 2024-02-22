@@ -63,8 +63,7 @@
         console.log(params);
         const response = await getBookableSlotList({}, params);
         res = await response.json();
-        console.log(
-            res.data);
+        console.log(res.data);
         isLoading = false;
     });
 
@@ -76,14 +75,11 @@
                 location_id: "c84065c5-c565-4310-8119-6a0c0707b9ba",
                 starts_at: slot.starts_at,
                 ends_at: slot.ends_at,
-                metadata: {user: userData.user.email}
+                metadata: { user: userData.user.email },
             };
-            const responseData = await createBooking(
-                {},
-               body,
-            );
+            const responseData = await createBooking({}, body);
             location.reload();
-            console.log(body)
+            console.log(body);
         } catch (error) {
             console.error("Error:", error);
         }
@@ -98,12 +94,14 @@
             <div class="flex flex-col gap-2 items-center">
                 Campo 1
                 {#each res.data.filter((obj) => obj.resources[0].id === "012cf36f-73fe-4f5a-9be9-a8feb98b00dd") as row}
-                    <div class="flex">
-                        <Button
-                            ><p>{row.starts_at.substring(0, 10)}</p>
-                            {row.starts_at.substring(11, 16)}</Button
-                        >
-                    </div>
+                    <form on:submit={() => handleSubmit(row)}>
+                        <div class="flex">
+                            <Button
+                                ><p>{row.starts_at.substring(0, 10)}</p>
+                                {row.starts_at.substring(11, 16)}</Button
+                            >
+                        </div>
+                    </form>
                 {/each}
             </div>
             <div class="flex flex-col gap-2 items-center">
@@ -111,7 +109,8 @@
                 {#each res.data.filter((obj) => obj.resources[0].id === "0580a516-d7f4-431a-865c-b681e5fbc142") as row}
                     <form on:submit={() => handleSubmit(row)}>
                         <div>
-                            <Button><p>{row.starts_at.substring(0, 10)}</p>
+                            <Button
+                                ><p>{row.starts_at.substring(0, 10)}</p>
                                 {row.starts_at.substring(11, 16)}
                             </Button>
                         </div>
