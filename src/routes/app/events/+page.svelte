@@ -18,7 +18,7 @@
             PRENOTA EVENTI
         </div>
         <div>
-            
+            Al momento non ci sono eventi prenotabili.
         </div>
         <div>
 

@@ -1,7 +1,7 @@
 <script>
     import { isAuthenticated } from "$lib/auth.js";
     import { supabase } from "$lib/supabaseClient.js";
-    import { Label, Input, Button, Icon } from "$lib/components/atoms";
+    import { Label, Input, Button, Icon, Spinner } from "$lib/components/atoms";
     import { onMount } from "svelte";
     import { getBookableSlotList } from "$lib/api/bookable_slots";
     import { createBooking } from "$lib/api/bookings";
@@ -119,4 +119,10 @@
             </div>
         </div>
     </main>
+{:else}
+<main>
+    <div
+        class="flex flex-row px-4 py-48 gap-8 pb-24 items-center justify-center"
+    ><Spinner /></div></main>
+
 {/if}
