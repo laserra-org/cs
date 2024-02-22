@@ -8,3 +8,5 @@ export let appModules = [
 ]
 export const HAPIO_API_URL = 'https://eu-central-1.hapio.net'
 export const HAPIO_API_TOKEN = 'PY6RqXb2B32lnzDfsaibSRPRSrwLNXUHjWdcYEVsce6f5fb4'
+export const VITE_SUPABASE_URL= 'https://jzzzibgfrdarpjzaezzb.supabase.co'
+export const VITE_SUPABASE_ANON_KEY= 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp6enppYmdmcmRhcnBqemFlenpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjAxOTYsImV4cCI6MjAyMzMzNjE5Nn0.0rwhb4Em55smlMMQmnEBHi0Y60DMr75_QCr7Vheh61k'
