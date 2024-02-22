@@ -6,7 +6,7 @@
         // Clear the JWT token from the cookie
         const { error } = await supabase.auth.signOut()
         document.cookie =
-            "sb-access-token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            "sb-jzzzibgfrdarpjzaezzb-auth-token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         // Redirect the user to a specific page after logging out (e.g., the login page)
         window.location.href = "/app";
     }
