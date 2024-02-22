@@ -21,7 +21,7 @@
             Non sei ancora membro?
         </div>
         <div class="flex flex-row items-center gap-3">
-            <Button>Registrati subito!</Button>
+            <a href="/register"><Button>Registrati subito!</Button></a>
         </div>
 
         <div class="flex flex-row items-center gap-3">
