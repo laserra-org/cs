@@ -11,7 +11,7 @@
             <div class="text-xl">SPORT</div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/book"
                         ><Icon
                             name="tennis"
                             color="fill-neutral-300"
@@ -19,11 +19,11 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Prenota un campo</a></div>
+                <div class="grow"><a href="/book">Prenota un campo</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/courses"
                         ><Icon
                             name="gymnastics"
                             color="fill-neutral-300"
@@ -31,13 +31,13 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">I nostri corsi</a></div>
+                <div class="grow"><a href="/courses">I nostri corsi</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div
                     class="rounded-full flex-none bg-opacity-10 bg-neutral-100 p-2"
                 >
-                    <a href="/fakeinfo"
+                    <a href="/gym"
                         ><Icon
                             name="fitness"
                             color="fill-neutral-300"
@@ -45,7 +45,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">La Palestra</a></div>
+                <div class="grow"><a href="/gym">La Palestra</a></div>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
             <div class="text-neutral-300 text-xl">CIBO</div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/workinglunch"
                         ><Icon
                             name="restaurant"
                             color="fill-neutral-300"
@@ -62,11 +62,11 @@
                         /></a
                     >
                 </div>
-                <div class="flex grow"><a href="/fakeinfo">Pranzo di lavoro</a></div>
+                <div class="flex grow"><a href="/workinglunch">Pranzo di lavoro</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/menu"
                         ><Icon
                             name="burger"
                             color="fill-neutral-300"
@@ -74,7 +74,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Menu serale</a></div>
+                <div class="grow"><a href="/menu">Menu serale</a></div>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/nutri"
                         ><Icon
                             name="nutrition"
                             color="fill-neutral-300"
@@ -93,12 +93,12 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Nutrizionista</a></div>
+                <div class="grow"><a href="/nutri">Nutrizionista</a></div>
             </div>
 
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/doctor"
                         ><Icon
                             name="heart"
                             color="fill-neutral-300"
@@ -106,11 +106,11 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Servizi ambulatoriali</a></div>
+                <div class="grow"><a href="/doctor">Servizi ambulatoriali</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/physio"
                         ><Icon
                             name="knee"
                             color="fill-neutral-300"
@@ -118,7 +118,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Fisioterapia</a></div>
+                <div class="grow"><a href="/physio">Fisioterapia</a></div>
             </div>
         </div>
     </div>
@@ -129,7 +129,7 @@
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/schools"
                         ><Icon
                             name="bus"
                             color="fill-neutral-300"
@@ -137,12 +137,12 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Per le scuole</a></div>
+                <div class="grow"><a href="/schools">Per le scuole</a></div>
             </div>
 
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/summercamps"
                         ><Icon
                             name="handball"
                             color="fill-neutral-300"
@@ -150,12 +150,12 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Summer e Winter camps</a></div>
+                <div class="grow"><a href="/summercamps">Summer e Winter camps</a></div>
             </div>
 
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/kids8-12"
                         ><Icon
                             name="skate"
                             color="fill-neutral-300"
@@ -163,11 +163,11 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Attività 8-12 anni</a></div>
+                <div class="grow"><a href="/kids8-12">Attività 8-12 anni</a></div>
             </div>
             <div class="flex flex-row items-center w-full gap-1">
                 <div class="rounded-full bg-opacity-10 bg-neutral-100 p-2">
-                    <a href="/fakeinfo"
+                    <a href="/kids3-7"
                         ><Icon
                             name="toddler"
                             color="fill-neutral-300"
@@ -175,7 +175,7 @@
                         /></a
                     >
                 </div>
-                <div class="grow"><a href="/fakeinfo">Attività 3-7 anni</a></div>
+                <div class="grow"><a href="/kids3-7">Attività 3-7 anni</a></div>
             </div>
         </div>
     </div>
