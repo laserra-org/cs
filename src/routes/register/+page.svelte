@@ -51,7 +51,7 @@
       <form class="space-y-4 text-neutral-700" on:submit={handleSubmit}>
         <div>
           <Label for="email">Email</Label>
-          <Input type="text" placeholder="Email Address" bind:value={email} />
+          <Input type="email" placeholder="Email Address" bind:value={email} />
         </div>
         <div>
           <Label for="password">Password</Label>
